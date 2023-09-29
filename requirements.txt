@@ -5,6 +5,6 @@ opencv-python
 torch
 torchvision
 ultralytics
-tensorrt
-cuda-python
-pycuda
+# tensorrt
+# cuda-python
+# pycuda
