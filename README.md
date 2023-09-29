@@ -20,14 +20,14 @@ With the help of this repo you can convert the trained yolov8 model to tensorrt.
   
   2. Convert trained yolov8 model to onnx:
      
-      ``` shell 
-    python3 export-det.py --weights path/to/best.pt --iou-thres 0.65 --conf-thres 0.25 --topk 100 --opset 11 --sim --input-shape 1 3 480 736 --device cuda:0
+      ``` shell
+      python3 export-det.py --weights path/to/best.pt --iou-thres 0.65 --conf-thres 0.25 --topk 100 --opset 11 --sim --input-shape 1 3 480 736 --device cuda:0
       ```
 
   3. Convert onnx model to tensorrt:
      
       ``` shell
-     python3 export.py -o path/to/best.onnx -e ./best.trt -p fp16
+      python3 export.py -o path/to/best.onnx -e ./best.trt -p fp16
       ```
 
      Note: you can change the floating point (fp) as per you requirements like (fp32, fp16, int8).
